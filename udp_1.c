@@ -11,7 +11,7 @@
 int main(int argc,char* argv[])
 {
 
-	int sockfd, ret;
+	int sockfd, ret,n;
 	 struct sockaddr_in serverAddr;
 
 	int newSocket;
@@ -66,7 +66,7 @@ int main(int argc,char* argv[])
 				}else{
 					printf("Client: %s\n", buffer);
 					send(newSocket, buffer, strlen(buffer), 0);
-					bzero(buffer, sizeof(buffer));
+					bzero(buffer,1024);
 				}
 			}
 		}

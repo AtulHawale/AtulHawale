@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<sys/types.h>
 
-#define MAX_COUNT 20
+#define MAX_COUNT 15 
 
 void  ChildProcess(void);                /* child process prototype  */
 void  ParentProcess(void);               /* parent process prototype */
